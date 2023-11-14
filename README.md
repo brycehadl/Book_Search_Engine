@@ -34,6 +34,7 @@ SO THAT I can keep a list of books to purchase
 
 ## Screenshots
 
+<img width="1495" alt="MERN" src="https://github.com/brycehadl/Book_Search_Engine/assets/133932050/b8ee317f-3d40-412a-9ebe-7f96f2c3ae26">
 
   
 ## Installation 
