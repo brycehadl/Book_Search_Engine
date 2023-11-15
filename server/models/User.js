@@ -20,8 +20,10 @@ const userSchema = new Schema(
       type: String,
       required: true,
     },
+    
     savedBooks: [bookSchema],
   },
+  
   {
     toJSON: {
       virtuals: true,
@@ -29,7 +31,6 @@ const userSchema = new Schema(
   }
 );
 
-// hash user password
 userSchema.pre("save", async function (next) {
   if (this.isNew || this.isModified("password")) {
     const saltRounds = 10;
