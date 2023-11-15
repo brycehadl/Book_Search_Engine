@@ -7,6 +7,7 @@ import {
   InMemoryCache,
 } from "@apollo/client";
 import { setContext } from "@apollo/client/link/context";
+
 import Navbar from "./components/Navbar";
 
 const httpLink = createHttpLink({
@@ -23,7 +24,6 @@ const authLink = setContext((_, { headers }) => {
   };
 });
 
-//set up client = new ApolloClient, then wrap Navbar and Outlet in ApolloProvider where client={client}//
 const client = new ApolloClient({
   link: authLink.concat(httpLink),
   cache: new InMemoryCache(),
